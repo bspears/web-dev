@@ -1,5 +1,51 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+	section.main#body
+		section.secondary.back
+			section.sectionRow.imgRow
+				section.sectionTile
+				section.sectionTile
+			section.sectionRow.imgRow-2
+		section.secondary.base
+			//- section.sectionRow.projectRow
+			//-   section.sectionTile
+			//-       h1.title Overlay-2
+			//-     section.sectionTile
+			//-       h1.title Overlay-2
+		section.secondary.base1.thirdRow
+			section.sectionRow
+				section.sectionTile.content-tile-light.header-tile
+					h1.title Bennett Spears
+					h2.sub-title Web Developer
+					div(data-fly='about').aboutButton.flyLink Information
+			section.sectionRow
+				section.projectDisplay.content-tile-main
+					section.project-facts
+						p facts here
+						div(data-fly='project1').projectButton.flyLink View Project
+						div.project-hero
+					section.project-preview
+						h1.title Projects
+						p Things about me, and then some more stuff. Other sentences and smart sounding junk goes here.
+				section.sectionRow
+				section.projectDisplay.content-tile-main
+					section.project-facts
+						p facts here
+						div(data-fly='project2').projectButton.flyLink 
+							span View Project
+						div.project-hero
+					section.project-preview
+						h1.title Projects
+						p Things about me, and then some more stuff. Other sentences and smart sounding junk goes here.
+	div.closeSection#closeSection
+		div.closeButton#closeButton Close
+	section.flyOut#aboutFly
+		h2.subTitle About Me
+		p Hello. Here is some stuff about me... a bunch of facts that really don't mean anything. But you feel obligated to read them for some reason. Even though they will do nothing in the way of helping you figure out if you want to hire me or not. But for some reason it makes you feel better that this section exists. So here it is.
+		h2.subTitle Reach out to me
+		p some links here....
+	section.flyOut#projectFly
+		script(id="template" type="x-tmpl-mustache")
+
+

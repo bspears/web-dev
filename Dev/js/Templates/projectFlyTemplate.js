@@ -1,0 +1,1 @@
+module.exports = '<section id="projectFly"><h1 class="subTitle">{{title}}</h1><p>{{description}}</p></section>';

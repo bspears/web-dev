@@ -1,0 +1,28 @@
+.projectRow {
+    position: absolute;
+    top: 50em;
+}
+
+.thirdRow {
+    position: absolute;
+    top: 0em;
+
+    .white-bkgrd {
+        background-color: $color-white;
+    }
+}
+
+.header-tile {
+    position: relative;
+    padding-top: 22%;
+}
+
+.closeSection {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 80%;
+    left: -100%;
+    height: 100vh;
+    background: rgba(50,50,50,0.5);
+}

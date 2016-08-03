@@ -1,0 +1,69 @@
+.aboutButton {
+	@include boxLink($color-white);
+	color: $color-white;
+	margin-top: 1em;
+}
+
+.projectButton {
+	span {
+		&:hover {
+			cursor: pointer;
+			border-bottom: 1px solid $color-black;
+		}
+	}
+}
+
+.closeButton {
+	@include boxLink($color-white);
+	position: absolute;
+	top: 50%;
+	right: 20%;
+	font-size: 1.6em;
+	background: rgba(242,145,145,0.8);
+}
+
+.content-tile-light {
+	color: $color-white;
+}
+
+.content-tile-main {
+	background: $color-white;
+}
+
+.content-tile-secondary {
+	background: $color-dark-back;
+}
+
+.projectDisplay {
+	@extend .rowTile;
+	padding: 0;
+	height: 50em;
+
+	.project-facts {
+		position: relative;
+		float: left;
+		width: 20%;
+		height: 100%;
+		@extend .content-tile-secondary;
+		margin: 0;
+	}
+
+	.project-preview {
+		float: left;
+		margin: 0;
+		width: 80%;
+	}
+}
+
+.project-hero {
+	position: absolute;
+	top: 40%;
+	right: -7.5em;
+	height: 15em;
+	width: 15em;
+	padding: 10px;
+	border-radius: 100%;
+	border: 5px solid $color-white;
+	background-image: url("../images/sam.jpg");
+	background-size: cover;
+}

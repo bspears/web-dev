@@ -1,0 +1,253 @@
+.sectionRow, .rowTile, .projectDisplay {
+  float: left;
+  width: 100%; }
+
+.sectionTile, .emptyTile {
+  float: left;
+  width: 50%; }
+
+body, p, span, div, img, ul, li, h1, h2, article, section, nav, aside, text {
+  font-family: 'Noto Sans', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1em; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+ul {
+  list-style: none; }
+
+button {
+  background-color: transparent;
+  font-size: inherit;
+  color: inherit; }
+
+body {
+  overflow-x: hidden; }
+
+p {
+  margin-bottom: 2em; }
+
+.main:after, .secondary:after, .sectionRow:after {
+  content: " ";
+  display: block;
+  clear: both; }
+
+.sectionRow {
+  display: block; }
+
+.rowTile, .projectDisplay {
+  padding: 5%;
+  position: relative;
+  height: 30em;
+  text-align: center; }
+  .rowTile .title, .projectDisplay .title {
+    margin-bottom: 1em; }
+
+.sectionTile {
+  padding: 5%;
+  position: relative;
+  height: 40em; }
+
+.emptyTile {
+  position: relative;
+  top: 0;
+  bottom: 0; }
+  .emptyTile div {
+    width: 1px;
+    height: 1px; }
+
+.flyOut {
+  padding: 15% 22% 5% 10%;
+  position: fixed;
+  background: #fff;
+  box-shadow: -2px 5px 26px 12px rgba(0, 0, 0, 0.1); }
+  .flyOut .subTitle {
+    margin-bottom: 1em; }
+
+.main {
+  perspective: 1px;
+  position: relative;
+  height: 100em;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-bottom: 30em; }
+
+.secondary {
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.back {
+  transform: translateZ(-1px) scale(2); }
+
+.base {
+  transform: translateZ(-1px) scale(2); }
+
+.base1 {
+  transform: translateZ(0); }
+
+.aboutButton {
+  color: #fff;
+  border: 1px solid #fff;
+  display: inline-block;
+  padding: .6em;
+  color: #fff;
+  margin-top: 1em; }
+  .aboutButton:hover {
+    cursor: pointer; }
+
+.projectButton span:hover {
+  cursor: pointer;
+  border-bottom: 1px solid #000; }
+
+.closeButton {
+  color: #fff;
+  border: 1px solid #fff;
+  display: inline-block;
+  padding: .6em;
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  font-size: 1.6em;
+  background: rgba(242, 145, 145, 0.8); }
+  .closeButton:hover {
+    cursor: pointer; }
+
+.content-tile-light {
+  color: #fff; }
+
+.content-tile-main {
+  background: #fff; }
+
+.content-tile-secondary, .projectDisplay .project-facts {
+  background: #cccbc6; }
+
+.projectDisplay {
+  padding: 0;
+  height: 50em; }
+  .projectDisplay .project-facts {
+    position: relative;
+    float: left;
+    width: 20%;
+    height: 100%;
+    margin: 0; }
+  .projectDisplay .project-preview {
+    float: left;
+    margin: 0;
+    width: 80%; }
+
+.project-hero {
+  position: absolute;
+  top: 40%;
+  right: -7.5em;
+  height: 15em;
+  width: 15em;
+  padding: 10px;
+  border-radius: 100%;
+  border: 5px solid #fff;
+  background-image: url("../images/sam.jpg");
+  background-size: cover; }
+
+.imgRow {
+  position: absolute;
+  top: 0;
+  background: url("../images/sam.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+.imgRow-2 {
+  position: absolute;
+  top: 40%;
+  bottom: 0;
+  background: url("../images/view-from-the-top.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+.projectRow {
+  position: absolute;
+  top: 50em; }
+
+.thirdRow {
+  position: absolute;
+  top: 0em; }
+  .thirdRow .white-bkgrd {
+    background-color: #fff; }
+
+.header-tile {
+  position: relative;
+  padding-top: 22%; }
+
+.closeSection {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 80%;
+  left: -100%;
+  height: 100vh;
+  background: rgba(50, 50, 50, 0.5); }
+
+.title {
+  font-size: 2.5em;
+  font-weight: lighter; }
+
+.sub-title {
+  font-size: 1.6em; }
+
+p {
+  color: #898989; }
+
+.flyout {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 60vw;
+  right: -2%;
+  background: #fff;
+  animation: flyout .5s; }
+
+@keyframes flyout {
+  0% {
+    right: -100%; }
+  60% {
+    right: -2%; }
+  85% {
+    right: -2.5%; }
+  100% {
+    right: -2%; } }
+
+.flyoutClosed {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 60vw;
+  right: -100%;
+  background: #fff;
+  animation: closeFly .5s; }
+
+@keyframes closeFly {
+  from {
+    right: -2%; }
+  to {
+    right: -100%; } }
+
+.closeSectionIn {
+  position: fixed;
+  left: -38%;
+  animation: closeSectionIn .5s; }
+
+@keyframes closeSectionIn {
+  0% {
+    left: -100%; }
+  60% {
+    left: -38%; }
+  85% {
+    left: -38.5%; }
+  100% {
+    left: -38%; } }

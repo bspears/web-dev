@@ -1,0 +1,79 @@
+.sectionRow {
+    @extend %clearfix;
+    @extend %grid-full;
+    display: block;
+}
+
+.rowTile {
+    @extend %grid-full;
+    padding: 5%;
+    position: relative;
+    height: 30em;
+    text-align: center;
+
+    .title {
+        margin-bottom: 1em;
+    }
+}
+
+.sectionTile {
+    @extend %grid-half;
+    padding: 5%;
+    position: relative;
+    height: 40em;
+}
+
+.emptyTile {
+    @extend %grid-half;
+    position: relative;
+    top: 0;
+    bottom: 0;
+
+    div {
+        width: 1px;
+        height: 1px;
+    }
+}
+
+.flyOut {
+    padding: 15% 22% 5% 10%;
+    position: fixed;
+    background: $color-white;
+    box-shadow: -2px 5px 26px 12px rgba(0,0,0,0.1);
+
+    .subTitle {
+        margin-bottom: 1em;
+    }
+}
+
+.main {
+    @extend %basic-box;
+    perspective: 1px;
+    position: relative;
+    height: 100em;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-bottom: 30em;
+}
+
+.secondary {
+    @extend %basic-box;
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.back {
+    transform: translateZ(-1px) scale(2);
+}
+
+.base {
+    transform: translateZ(-1px) scale(2);
+}
+
+.base1 {
+    transform: translateZ(0);
+}
